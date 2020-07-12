@@ -4,22 +4,28 @@
     <meta charset="utf-8">
     <title> Family </title>
     <style media="screen">
-      .container {}
-      .family_graph {}
-      .father {}
-      .father_data {}
-      .mother {}
-      .mother_data {}
-      .child {}
-      .child_data {}
+      .container { position: relative; }
+      .family_graph { position: relative; }
+      .father {  position: relative; float: left; width: 20%; padding: 10% 5% 10% 10%; }
+      .father_data { position: relative; width: 100%; }
+      .father_data_border { border: 10px solid #ff9900; border-radius: 50%; }
+      .father_data_border_content { position: relative; margin: 0px auto; text-align: center; font-size: 24px; font-weight: 600; padding: 43% 0% 43% 0%; }
+      .mother {  position: relative; float: left; width: 20%; padding: 10% 5% 10% 5%; }
+      .mother_data { position: relative; width: 100%; }
+      .mother_data_border { border: 10px solid #ff9900; border-radius: 50%; }
+      .mother_data_border_content { position: relative; margin: 0px auto; text-align: center; font-size: 24px; font-weight: 600; padding: 43% 0% 43% 0%; }
+      .child {  position: relative; float: left; width: 20%; padding: 10% 10% 10% 5%; }
+      .child_data { position: relative; width: 100%; }
+      .child_data_border { border: 10px solid #ff9900; border-radius: 50%; }
+      .child_data_border_content { position: relative; margin: 0px auto; text-align: center; font-size: 24px; font-weight: 600; padding: 43% 0% 43% 0%; }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="family_graph">
-        <div class="father"> <div class="father_data"> </div> </div>
-        <div class="mother"> <div class="mother_data"> </div> </div>
-        <div class="child"> <div class="child_data"> </div> </div>
+        <div class="father"> <div class="father_data"> <div class="father_data_border"> <div class="father_data_border_content"> 123 </div> </div> </div> </div>
+        <div class="mother"> <div class="mother_data"> <div class="mother_data_border"> <div class="mother_data_border_content"> 456 </div> </div> </div> </div>
+        <div class="child"> <div class="child_data"> <div class="child_data_border"> <div class="child_data_border_content"> 789 </div> </div> </div> </div>
       </div>
     </div>
   </body>
